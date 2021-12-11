@@ -1,0 +1,123 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Cetak Kartu Mahasiswa'
+  ClientHeight = 340
+  ClientWidth = 405
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 115
+    Top = 118
+    Width = 238
+    Height = 12
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 128
+    Top = 81
+    Width = 185
+    Height = 31
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Masukkan NIM'
+  end
+  object Button1: TButton
+    Left = 160
+    Top = 136
+    Width = 105
+    Height = 41
+    Caption = 'Cetak Kartu'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object MyConnection1: TMyConnection
+    Database = 'pendaftaran_mahasiswa'
+    Username = 'root'
+    Server = 'localhost'
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 232
+  end
+  object MyQuery1: TMyQuery
+    Connection = MyConnection1
+    SQL.Strings = (
+      'SELECT * FROM mahasiswa')
+    Active = True
+    Left = 88
+    Top = 232
+  end
+  object frxReport1: TfrxReport
+    Version = '5.1.5'
+    DataSet = frxDBDataset1
+    DataSetName = 'frxDBDataset1'
+    DotMatrixReport = True
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 44541.124152534720000000
+    ReportOptions.LastChange = 44541.124152534720000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 176
+    Top = 248
+    Datasets = <>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'id=id'
+      'nim=nim'
+      'nama=nama'
+      'agama=agama'
+      'jankel=jankel'
+      'tpt_lhr=tpt_lhr'
+      'tgl_lhr=tgl_lhr'
+      'no_hp=no_hp'
+      'alamat=alamat'
+      'jurusan=jurusan')
+    DataSet = MyQuery1
+    BCDToCurrency = False
+    Left = 248
+    Top = 256
+  end
+end

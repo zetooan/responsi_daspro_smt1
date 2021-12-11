@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/28 21:56:26.000.407,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:05:48.000.575,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/10 23:55:58.000.377,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/11 01:14:06.000.398,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/11 01:18:55.000.226,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Unit1.pas</Transaction>
+    <Transaction>2021/12/11 01:18:55.000.226,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Unit1.dfm</Transaction>
+    <Transaction>2021/12/11 01:19:25.000.005,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Pendaftaran_mahasiswa.dproj</Transaction>
+    <Transaction>2021/12/11 01:20:37.931,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Unit2.pas</Transaction>
+    <Transaction>2021/12/11 02:15:56.805,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Unit3.pas</Transaction>
+    <Transaction>2021/12/11 02:37:56.562,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\pendaftaran mahasiswa\Unit4.pas</Transaction>
+  </Transactions>
+</BorlandProject>
